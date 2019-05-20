@@ -1,0 +1,62 @@
+body {
+	font-family: 'Jura', sans-serif;
+	font-weight: 400;
+	background-color: #fff;
+	color: #fff;
+	letter-spacing: 0.025em;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header {
+	background: 
+	url("../img/small-smoke.png") no-repeat,
+	url("../img/stars.png") repeat-x;
+	background-size: cover, auto;
+	background-color: #000;
+	height: 710px;
+}
+
+.header-container {
+	width: 1120px;
+	margin: 0 auto;
+}
+
+.header-top {
+	height: 58px;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+}
+
+.header-top h2 {
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.header-top .location {
+	font-size: 16px;
+	margin-left: 210px;
+}
+
+.header-top .tell-back {
+	display: block;
+	margin-left: 180px;
+	padding: 4px 0;
+	width: 110px;
+	border: 1px solid #0b86d4;
+	border-radius: 25px;
+	text-align: center;
+	font-size: 10px;
+}
+
+.header-top .number {
+	font-size: 16px;
+	margin-left: 24px;
+}
