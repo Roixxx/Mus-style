@@ -17,9 +17,9 @@ a {
 
 header {
 	background: 
-	url("../img/small-smoke.png") no-repeat,
-	url("../img/stars.png") repeat-x;
-	background-size: cover, auto;
+	url("../img/small-smoke.png") no-repeat top/cover,
+	url("../img/smoke.jpg") no-repeat 78% 100%,
+	url("../img/stars.png") repeat-x top;
 	background-color: #000;
 	height: 710px;
 }
@@ -37,9 +37,13 @@ header {
 }
 
 .header-top h2 {
-	margin-left: 10px;
+	padding-left: 40px;
 	font-size: 20px;
 	font-weight: 700;
+}
+
+.header-top a.logo {
+	background: url("../img/logo-disk.png") no-repeat left center;
 }
 
 .header-top .location {
@@ -56,6 +60,11 @@ header {
 	border-radius: 25px;
 	text-align: center;
 	font-size: 10px;
+	transition: 0.3s;
+}
+
+.header-top .tell-back:hover {
+	background-color: rgba(16, 195, 233, 0.4);
 }
 
 .header-top .number {
@@ -105,6 +114,7 @@ header {
 	padding-top: 12px;
 	font-size: 14px;
 	margin: 0;
+	color: #cfcbcb;
 }
 
 .header-content .video-text::before {
@@ -122,8 +132,193 @@ header {
 	height: 55px;
 	border-radius: 25px;
 	background: url("../img/sprites.png") -294px -15px;
+	transition: 0.3s;
 	position: absolute;
 	top: -10px;
 	right: 3px;
 }
 
+.header-content .play-video-button:hover {
+	background-color: rgba(16, 195, 233, 0.4);
+}
+
+.header-content img {
+	position: absolute;
+	right: 35%;
+	top: 8%;
+}
+
+.header-bottom {
+	width: 190px;
+	margin-top: 135px;
+	margin-left: 57px;
+}
+
+.header-bottom  li {
+	display: inline-block;
+	margin-right: 20px;
+	border: 1px solid #0b83cf;
+	border-radius: 50%;
+	transition: 0.3s;
+	background-color: #080a0c;
+}
+
+.social-links {
+	margin: 0;
+	padding: 0;
+}
+
+.social-links a {
+	display: block;
+	width: 34px;
+	height: 34px;
+}
+
+.social-links li:hover {
+	background-color: rgba(16, 195, 233, 0.4);
+}
+
+.header-bottom .vk {
+    background-image: url("../img/sprites.png");
+    background-position: -96px -3px;
+}
+
+.header-bottom .yt {
+	background-image: url("../img/sprites.png");
+	background-position: -47px -7px;
+}
+
+.header-bottom .fb {
+	background-image: url("../img/sprites.png");
+	background-position: -3px -7px;
+}
+
+
+/* ###### SECTION ABOUT-GUITAR ###### */
+
+section.about-guitar {
+	background-color: #f7f7f7;
+	height: 820px;
+	color: #2b2a2a;
+}
+
+.about-guitar .container {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	background: url("../img/about-bg.jpg") 100%/auto;
+	padding: 75px 30px 0 30px;
+	box-sizing: border-box;
+}
+
+/*
+.about-guitar .guitar {
+	width: 240px;
+	height: 660px;
+	background: url("../img/pink-effect.png") no-repeat;
+	background-position: center 70%;
+	background-size: contain;
+}
+
+<div class="guitar">
+	<img src="img/guitar-big.png" alt="guitar">
+</div>
+*/
+
+.about-guitar .about-title {
+	width: 553px;
+	font-weight: bold;
+}
+
+.about-guitar .about-title h2 {
+	font-size: 36px;
+	margin: 0;
+	margin-left: 3px;
+}
+
+.about-guitar .price {
+	font-size: 30px;
+	margin: 0;
+	margin-top: 20px;
+}
+
+.about-guitar .price::before {
+	display: inline-block;
+	content: "";
+	width: 111px;
+	height: 2px;
+	background-color: #47a3dd;
+	vertical-align: middle;
+	margin-left: 3px;
+	margin-right: 20px;
+}
+
+.about-guitar ol.features-list {
+	margin: 0;
+	padding: 0;
+	margin-top: 58px;
+	width: 410px;
+	list-style-type: none; 
+    counter-reset: num;
+}
+
+.about-guitar .features-list  li {
+	margin: 0;
+	padding-bottom: 6px;
+}
+
+.about-guitar li::before {
+    content: "0" counter(num); 
+    counter-increment: num;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.about-guitar .features-list h3 {
+	margin: 0;
+	margin-left: 3px;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.features-list li:first-child h3:first-child {
+	margin-left: 10px;
+}
+
+.about-guitar .features-list p {
+	margin: 10px 0 0 55px;
+	font-size: 14px;
+	line-height: 23px;
+	font-family: 'Jura Light', sans-serif;
+}
+
+.about-guitar .features-list p::after {
+	content: "";
+	display: block;
+	width: 339px;
+	height: 1px;
+	background-color: #979797;
+	margin-top: 17px;
+	margin-left: -46px;
+}
+
+.about-guitar .buy-button {
+	display: block;
+	margin-top: 38px;
+	margin-left: 1px;
+	padding: 15px 0;
+	width: 250px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff5f7;
+	background-color: #ff3d6f;
+	text-align: center;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+
+.about-guitar .buy-button:hover {
+	background-color: #fe698f;
+}
