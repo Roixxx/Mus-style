@@ -200,6 +200,7 @@ section.about-guitar {
 	background-color: #f7f7f7;
 	height: 820px;
 	color: #2b2a2a;
+	position: relative;
 }
 
 .about-guitar .container {
@@ -210,20 +211,6 @@ section.about-guitar {
 	padding: 75px 30px 0 30px;
 	box-sizing: border-box;
 }
-
-/*
-.about-guitar .guitar {
-	width: 240px;
-	height: 660px;
-	background: url("../img/pink-effect.png") no-repeat;
-	background-position: center 70%;
-	background-size: contain;
-}
-
-<div class="guitar">
-	<img src="img/guitar-big.png" alt="guitar">
-</div>
-*/
 
 .about-guitar .about-title {
 	width: 553px;
@@ -267,7 +254,7 @@ section.about-guitar {
 	padding-bottom: 6px;
 }
 
-.about-guitar li::before {
+.about-guitar li.feature-item::before {
     content: "0" counter(num); 
     counter-increment: num;
     font-size: 36px;
@@ -321,4 +308,62 @@ section.about-guitar {
 
 .about-guitar .buy-button:hover {
 	background-color: #fe698f;
+}
+
+.about-guitar .guitar {
+	width: 240px;
+	height: 660px;
+	background: url("../img/pink-effect.png") no-repeat;
+	background-position: center 70%;
+	background-size: contain;
+	position: absolute;
+	top: 14%;
+	left: 44%;
+}
+
+.about-guitar ul.guitar-specifications {
+	width: 240px;
+	padding: 0;
+	margin: 0;
+}
+
+ul.guitar-specifications li {
+	list-style-type: none;
+	margin: 0;
+	width: 240px;
+	text-align: center;
+}
+
+ul.guitar-specifications .circle {
+	display: block;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 98px;
+	height: 98px;
+	border: 1px solid #1b8ed7;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+ul.guitar-specifications p {
+	margin: 0;
+	margin-top: 8px;
+	font-size: 24;
+	font-family: 'Jura Medium', sans-serif;
+	text-align: center;
+	width: 240px;
+
+}
+
+ul.guitar-specifications p::after {
+	display: block;
+	margin: 27px auto 39px auto;
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: #9d9c9c;
+
 }
