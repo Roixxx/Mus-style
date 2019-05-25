@@ -207,13 +207,14 @@ section.about-guitar {
 	height: 100%;
 	margin: 0 auto;
 	background: url("../img/about-bg.jpg") 100%/auto;
-	padding: 75px 30px 0 30px;
+	padding: 65px 30px 0 30px;
 	box-sizing: border-box;
 }
 
 .about-guitar main {
 	display: flex;
 	align-items: flex-start;
+	position: relative;
 }
 
 .about-guitar .about-title {
@@ -296,10 +297,12 @@ section.about-guitar {
 	margin-left: -46px;
 }
 
-/*
+
 
 .about-guitar .buy-button {
 	display: block;
+	position: absolute;
+	bottom: 73px;
 	padding: 15px 0;
 	width: 250px;
 	font-size: 30px;
@@ -314,10 +317,6 @@ section.about-guitar {
 .about-guitar .buy-button:hover {
 	background-color: #fe698f;
 }
-
-<a class="buy-button" href="#">Купить</a>
-
-*/
 
 .about-guitar .guitar {
 	width: 240px;
@@ -360,7 +359,7 @@ ul.guitar-specifications .circle {
 ul.guitar-specifications p {
 	margin: 0;
 	margin-top: 8px;
-	font-size: 24;
+	font-size: 24px;
 	font-family: 'Jura Medium', sans-serif;
 	text-align: center;
 	width: 240px;
@@ -369,7 +368,7 @@ ul.guitar-specifications p {
 
 ul.guitar-specifications p::after {
 	display: block;
-	margin: 27px auto 39px auto;
+	margin: 21px auto 39px auto;
 	content: "";
 	width: 60px;
 	height: 1px;
