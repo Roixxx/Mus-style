@@ -17,9 +17,9 @@ a {
 
 header {
 	background: 
-	url("../img/small-smoke.png") no-repeat top/cover,
-	url("../img/smoke.jpg") no-repeat 78% 100%,
-	url("../img/stars.png") repeat-x top;
+	url("../img/header/small-smoke.png") no-repeat top/cover,
+	url("../img/header/smoke.jpg") no-repeat 78% 100%,
+	url("../img/header/stars.png") repeat-x top;
 	background-color: #000;
 	height: 710px;
 }
@@ -123,7 +123,7 @@ header {
 	height: 46px;
 	display: block;
 	margin-left: 70px;
-	background: url("../img/sprites.png") -213px -15px;
+	background: url("../img/header/sprites.png") -213px -15px;
 }
 
 .header-content .play-video-button {
@@ -131,7 +131,7 @@ header {
 	width: 55px;
 	height: 55px;
 	border-radius: 25px;
-	background: url("../img/sprites.png") -294px -15px;
+	background: url("../img/header/sprites.png") -294px -15px;
 	transition: 0.3s;
 	position: absolute;
 	top: -10px;
@@ -179,17 +179,17 @@ header {
 }
 
 .header-bottom .vk {
-    background-image: url("../img/sprites.png");
+    background-image: url("../img/header/sprites.png");
     background-position: -96px -3px;
 }
 
 .header-bottom .yt {
-	background-image: url("../img/sprites.png");
+	background-image: url("../img/header/sprites.png");
 	background-position: -47px -7px;
 }
 
 .header-bottom .fb {
-	background-image: url("../img/sprites.png");
+	background-image: url("../img/header/sprites.png");
 	background-position: -3px -7px;
 }
 
@@ -206,7 +206,7 @@ section.about-guitar {
 	width: 1200px;
 	height: 100%;
 	margin: 0 auto;
-	background: url("../img/about-bg.jpg") 100%/auto;
+	background: url("../img/about-guitar/about-bg.jpg") 100%/auto;
 	padding: 65px 30px 0 30px;
 	box-sizing: border-box;
 }
@@ -321,7 +321,7 @@ section.about-guitar {
 .about-guitar .guitar {
 	width: 240px;
 	height: 660px;
-	background: url("../img/pink-effect.png") no-repeat;
+	background: url("../img/about-guitar/pink-effect.png") no-repeat;
 	background-position: center 70%;
 	background-size: contain;
 	margin-left: 52px;
@@ -374,4 +374,90 @@ ul.guitar-specifications p::after {
 	height: 1px;
 	background-color: #9d9c9c;
 
+}
+
+
+/* ###### SECTION GUARANTEES ###### */
+
+section.guarantees {
+	padding: 155px 0 0 0;
+	background: linear-gradient(to bottom, #fbfbfb, #fff);
+}
+
+.guarantees .container {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.guarantees .left-side {
+	width: 665px;
+}
+
+.guarantees .right-side {
+	width: 495px;
+}
+
+.left-side .title {
+	color: #000;
+	font-size: 36px;
+	font-weight: bold; 
+	margin: 0 0 0 8px;
+	line-height: 72px;
+}
+
+
+.left-side .title::after {
+	content: "";
+	display: block;
+	width: 111px;
+	height: 2px;
+	background-color: #47a3dd;
+
+}
+
+.left-side span {
+	color: #0b86d4;
+}
+
+.guarantees ul.features {
+	margin: 116px 0 0 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul.features li {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	margin-right: 55px;
+	margin-bottom: 98px;
+	padding-left: 109px;
+	width: 275px;
+	height: 100px;
+	background: url("../img/guarantees/css_sprites.png") no-repeat;
+	background-color: #000;
+	border-radius: 10px;
+	font-size: 20px;
+	line-height: 31px;
+	font-weight: bold;
+}
+
+ul.features li:nth-child(even) {
+	margin-right: 0;
+}
+
+ul.features .delivery {
+	background-position: -20px -280px;
+}
+
+ul.features .document {
+	background-position: -10px -417px;
+}
+ul.features .pay {
+	background-position: -15px -10px;
+}
+ul.features .service {
+	background-position: -20px -144px;
 }
