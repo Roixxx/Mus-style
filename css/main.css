@@ -72,10 +72,6 @@ header {
 	margin-left: 24px;
 }
 
-.header-content {
-	
-}
-
 .header-content h1 {
 	font-size: 50px;
 	line-height: 72px;
@@ -103,21 +99,21 @@ header {
 	margin-top: 45px;
 }
 
-.header-content .video-review {
+.video-review {
 	width: 195px;
 	height: 90px;
 	position: relative;
 	margin-left: 310px;
 }
 
-.header-content .video-text {
+.video-text {
 	padding-top: 12px;
 	font-size: 14px;
 	margin: 0;
 	color: #cfcbcb;
 }
 
-.header-content .video-text::before {
+.video-text::before {
 	content: "";
 	width: 51px;
 	height: 46px;
@@ -126,7 +122,7 @@ header {
 	background: url("../img/header/sprites.png") -213px -15px;
 }
 
-.header-content .play-video-button {
+.play-video-button {
 	display: inline-block;
 	width: 55px;
 	height: 55px;
@@ -138,7 +134,7 @@ header {
 	right: 3px;
 }
 
-.header-content .play-video-button:hover {
+.play-video-button:hover {
 	background-color: rgba(16, 195, 233, 0.4);
 }
 
@@ -392,10 +388,26 @@ section.guarantees {
 
 .guarantees .left-side {
 	width: 665px;
+	background-image: url("../img/guarantees/blue-smoke.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: -80px 80%;
+
 }
 
 .guarantees .right-side {
 	width: 495px;
+	position: relative;
+}
+
+.guarantees .right-side::before {
+	content: "";
+	display: inline-block;
+	height: 399px;
+	width: 1px;
+	background-color: #939191;
+	position: absolute;
+	bottom: 15px;
 }
 
 .left-side .title {
@@ -460,4 +472,59 @@ ul.features .pay {
 }
 ul.features .service {
 	background-position: -20px -144px;
+}
+
+.right-side .feedback-list {
+	height: 100%;
+	text-align: center;
+	background: url("../img/guarantees/disc.png") no-repeat;
+	background-position: center 15%;
+	padding-top: 45%;
+	box-sizing: border-box;
+}
+
+.all-feedback-list {
+	text-align: left;
+	bottom: 0;
+	width: 300px;
+	height: 120px;
+	margin-top: 60px;
+	qborder: 1px solid green;
+}
+
+.all-feedback-list p {
+	margin: 0;
+	margin-left: 25px;
+	color: #000000;
+	font-size: 20px;
+	font-family: "Bad Script Regular";
+}
+
+.all-feedback-list p::before {
+	content: "";
+	display: block;
+	background: url("../img/guarantees/css_sprites.png") no-repeat;
+	background-position: -46px -632px;
+	width: 48px;
+	height: 47px;
+	margin-left: 187px;
+	margin-bottom: -25px;
+}
+
+.all-feedback-list a {
+	display: block;
+	width: 42px;
+	height: 42px;
+	border: 1px solid #f1ab61;
+	border-radius: 50%;
+	background: url("../img/guarantees/css_sprites.png");
+	background-position: -37px -540px;
+	margin-right: 0;
+	margin-left: auto;
+	transition: 0.3s;
+}
+
+.all-feedback-list a:hover {
+	background-color: #f4dbc0;
+	border: 1px solid #a3917d;
 }
