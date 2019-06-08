@@ -543,7 +543,6 @@ section.order .container {
 
 .order .title {
 	display: inline-block;
-	position: absolute;
 	margin: 0;
 	width: 593px;
 	padding-top: 103px;
@@ -562,10 +561,56 @@ section.order .container {
 }
 
 .order img {
-
 	position: relative;
 	top: -64px;
 	right: 32px;
 	float: right;
+
+}
+
+
+.order form {
+	display: flex;
+	margin-top: 125px;
+	align-items: flex-start;
+}
+
+.order input,
+.order button {
+	width: 296px;
+	height: 56px;
+	padding: 24px;
+	margin: 0;
+	border: 1px solid #0b86d4;
+	border-radius: 25px;
+	background-color: #252525;
+	color: #aaa9a9;
+	box-sizing: border-box;
+}
+
+.order .phone-block {
+
+}
+
+.order .email-block {
+
+}
+
+.order button {
+	align-self: flex-end;
+	padding: 0px 82px;
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+	font-family: "Jura Medium", sans-serif;
+	text-transform: uppercase;
+ 	
+}
+
+.phone-block input {
+
+}
+
+.email-block input {
 
 }
