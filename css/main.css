@@ -190,7 +190,7 @@ header {
 }
 
 
-/* ###### SECTION ABOUT-GUITAR ###### */
+/* ###### ABOUT-GUITAR SECTION###### */
 
 section.about-guitar {
 	background-color: #f7f7f7;
@@ -373,10 +373,10 @@ ul.guitar-specifications p::after {
 }
 
 
-/* ###### SECTION GUARANTEES ###### */
+/* ###### GUARANTEES SECTION ###### */
 
 section.guarantees {
-	padding: 155px 0 0 0;
+	padding: 155px 0 155px 0;
 	background: linear-gradient(to bottom, #fbfbfb, #fff);
 }
 
@@ -425,10 +425,9 @@ section.guarantees {
 	width: 111px;
 	height: 2px;
 	background-color: #47a3dd;
-
 }
 
-.left-side span {
+span.blue {
 	color: #0b86d4;
 }
 
@@ -489,7 +488,6 @@ ul.features .service {
 	width: 300px;
 	height: 120px;
 	margin-top: 60px;
-	qborder: 1px solid green;
 }
 
 .all-feedback-list p {
@@ -527,4 +525,47 @@ ul.features .service {
 .all-feedback-list a:hover {
 	background-color: #f4dbc0;
 	border: 1px solid #a3917d;
+}
+
+
+/* ###### OREDER SECTION ###### */
+
+section.order {
+	background: url("../img/order/smoke.png") 100%/cover no-repeat;
+	background-color: #181818;
+	height: 750px;            
+}
+
+section.order .container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.order .title {
+	display: inline-block;
+	position: absolute;
+	margin: 0;
+	width: 593px;
+	padding-top: 103px;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 63px;
+}
+
+.order .title::after {
+	content: "";
+	display: block;
+	margin-top: 32px;
+	width: 190px;
+	height: 2px;
+	background-color: #47a3dd;
+}
+
+.order img {
+
+	position: relative;
+	top: -64px;
+	right: 32px;
+	float: right;
+
 }
