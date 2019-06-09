@@ -533,7 +533,7 @@ ul.features .service {
 section.order {
 	background: url("../img/order/smoke.png") 100%/cover no-repeat;
 	background-color: #181818;
-	height: 750px;            
+	height: 582px;            
 }
 
 section.order .container {
@@ -568,7 +568,6 @@ section.order .container {
 
 }
 
-
 .order form {
 	display: flex;
 	margin-top: 125px;
@@ -584,16 +583,15 @@ section.order .container {
 	border: 1px solid #0b86d4;
 	border-radius: 25px;
 	background-color: #252525;
-	color: #aaa9a9;
+	color: #cbcbcb;
+	font-size: 20px;
+	font-family: "Jura Light", sans-serif;
 	box-sizing: border-box;
 }
 
-.order .phone-block {
-
-}
-
+.order .phone-block,
 .order .email-block {
-
+	margin-right: 35px;
 }
 
 .order button {
@@ -604,13 +602,25 @@ section.order .container {
 	cursor: pointer;
 	font-family: "Jura Medium", sans-serif;
 	text-transform: uppercase;
+
  	
 }
 
-.phone-block input {
-
+.order label {
+	display: block;
+	font-size: 20px;
+	padding-left: 26px;
+	margin-bottom: 19px;
+	position: relative;
 }
 
-.email-block input {
-
+.order label::after {
+	display: block;
+	content: "";
+	width: 114px;
+	height: 108px;
+	background: url("../img/order/star.png");
+	position: absolute;
+	left: -60px;
+	top: -40px;
 }
