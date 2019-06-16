@@ -207,7 +207,7 @@ section.about-guitar {
 	box-sizing: border-box;
 }
 
-.about-guitar main {
+.about-guitar .content {
 	display: flex;
 	align-items: flex-start;
 	position: relative;
