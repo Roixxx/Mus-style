@@ -43,7 +43,8 @@ header {
 }
 
 .header-top a.logo {
-	background: url("../img/logo-disk.png") no-repeat left center;
+	background: url("../img/header/sprites.png") no-repeat left center;
+	background-position: 0px -41px;
 }
 
 .header-top .location {
@@ -532,8 +533,7 @@ ul.features .service {
 
 section.order {
 	background: url("../img/order/smoke.png") 100%/cover no-repeat;
-	background-color: #181818;
-	height: 582px;            
+	background-color: #181818;           
 }
 
 section.order .container {
@@ -602,8 +602,11 @@ section.order .container {
 	cursor: pointer;
 	font-family: "Jura Medium", sans-serif;
 	text-transform: uppercase;
+	transition: 0.3s;
+}
 
- 	
+.order button:hover {
+	background-color: rgba(16, 195, 233, 0.4);
 }
 
 .order label {
@@ -623,4 +626,57 @@ section.order .container {
 	position: absolute;
 	left: -60px;
 	top: -40px;
+}
+
+
+/* ###### FOOTER ###### */
+
+footer {
+	width: 1140px;
+	margin: 0 auto;
+	margin-top: 99px;
+	padding-bottom: 69px;
+
+}
+
+footer::before {
+	content: "";
+	display: block;
+	margin-left: 9px;
+	width: 1080px;
+	height: 1px;
+	background-color: #fff;
+	box-shadow: 0px 0px 16px 1px #00d8ff;
+}
+
+footer .footer-content {
+	margin-top: 44px;
+	padding-left: 6px;
+	padding-right: 69px;
+	display: flex;
+	align-items: center;
+}
+
+footer a.logo {
+	padding-left: 44px;
+	height: 30px;
+	background: url("../img/header/sprites.png") no-repeat left center;
+	background-position: 0px -55px;
+	box-sizing: border-box;
+}
+
+footer .site-name {
+	margin: 0;
+	font-size: 20px;
+}
+
+footer .location {
+	font-size: 16px;
+	margin: 0;
+	margin-left: 450px;
+}
+
+footer .number {
+	font-size: 16px;
+	margin-left: 130px;
 }
