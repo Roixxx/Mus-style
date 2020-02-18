@@ -25,7 +25,8 @@ header {
 }
 
 .header-container {
-	width: 1120px;
+	max-width: 1120px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -204,7 +205,8 @@ section.about-guitar {
 }
 
 .about-guitar .container {
-	width: 1200px;
+	max-width: 1200px;
+	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 	background: url("../img/about-guitar/about-bg.jpg") 100%/auto;
@@ -386,13 +388,15 @@ section.guarantees {
 }
 
 .guarantees .container {
-	width: 1160px;
+	max-width: 1160px;
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 }
 
 .guarantees .left-side {
-	width: 665px;
+	max-width: 665px;
+	width: 100%;
 	background-image: url("../img/guarantees/blue-smoke.png");
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -401,7 +405,8 @@ section.guarantees {
 }
 
 .guarantees .right-side {
-	width: 495px;
+	max-width: 495px;
+	width: 100%;
 	position: relative;
 }
 
@@ -540,14 +545,16 @@ section.order {
 }
 
 section.order .container {
-	width: 1140px;
+	max-width: 1140px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 .order .title {
 	display: inline-block;
 	margin: 0;
-	width: 593px;
+	max-width: 593px;
+	width: 100%;
 	padding-top: 103px;
 	font-size: 36px;
 	font-weight: bold;
@@ -634,7 +641,8 @@ section.order .container {
 /* ###### FOOTER ###### */
 
 footer {
-	width: 1140px;
+	max-width: 1140px;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 99px;
 	padding-bottom: 30px;
@@ -644,8 +652,7 @@ footer {
 footer::before {
 	content: "";
 	display: block;
-	margin-left: 9px;
-	width: 1080px;
+	width: 100%;
 	height: 1px;
 	background-color: #fff;
 	box-shadow: 0px 0px 16px 1px #00d8ff;
