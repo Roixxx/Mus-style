@@ -220,7 +220,7 @@ section.about-guitar {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	padding: 65px 30px 51px 30px;
+	padding: 65px 15px 51px 15px;
 	box-sizing: border-box;
 }
 
@@ -311,12 +311,9 @@ section.about-guitar {
 	margin-left: -46px;
 }
 
-
-
 .about-guitar .buy-button {
 	display: block;
-	position: absolute;
-	bottom: 0px;
+	margin-top: 20px;
 	padding: 15px 0;
 	width: 250px;
 	font-size: 30px;
@@ -338,13 +335,12 @@ section.about-guitar {
 	background: url("../img/about-guitar/pink-effect.png") no-repeat;
 	background-position: center 70%;
 	background-size: contain;
-	margin-left: 52px;
-	margin-right: 60px;
 	margin-top: -55px;
 }
 
 .about-guitar ul.guitar-specifications {
-	width: 240px;
+	max-width: 240px;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -352,7 +348,8 @@ section.about-guitar {
 ul.guitar-specifications li {
 	list-style-type: none;
 	margin: 0;
-	width: 240px;
+	max-width: 240px;
+	width: 100%;
 	text-align: center;
 }
 
@@ -371,12 +368,12 @@ ul.guitar-specifications .circle {
 }
 
 ul.guitar-specifications p {
-	margin: 0;
+	margin: 0 auto;
 	margin-top: 8px;
 	font-size: 24px;
 	font-family: 'Jura Medium', sans-serif;
 	text-align: center;
-	width: 240px;
+	max-width: 200px;
 
 }
 
@@ -706,6 +703,8 @@ footer .number:hover {
 	border-top: 2px solid transparent;
 }
 
+
+
 @media (max-width: 1120px) {
 	.guarantees ul.features {
 		justify-content: center;
@@ -717,4 +716,52 @@ footer .number:hover {
 		margin-bottom: 30px;
 		margin-right: 25px;
 	}
+	
+	.order img {
+		width: 40%;
+		top: 125px;
+	}
+}
+
+@media (max-width: 940px) {
+	.header-content__inner {
+		right: 70px;
+	}
+
+	.about-guitar .content {
+		flex-wrap: wrap;
+	}
+
+	.about-guitar ul.guitar-specifications {
+		display: flex;
+
+	}
+	
+	ul.guitar-specifications p::after {
+		display: none;
+	}
+
+	ul.guitar-specifications li {
+		margin-right: 10px;
+	}
+
+	.left-side .title {
+		line-height: 1.4;
+	}
+
+	.order img {
+		display: none;
+	}
+}
+
+
+@media (max-width: 700px) {
+	.about-guitar .features-list p {
+		margin-left: 5px;
+	}
+
+	.about-guitar ol.features-list {
+		width: 330px;
+	}
+
 }
