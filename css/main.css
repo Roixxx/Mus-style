@@ -13,6 +13,11 @@ a {
 	text-decoration: none;
 }
 
+.container {
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
 /* ###### HEADER BLOCK ###### */
 
 header {
@@ -25,7 +30,7 @@ header {
 }
 
 .header-container {
-	max-width: 1120px;
+	max-width: 1150px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -200,22 +205,24 @@ header {
 /* ###### ABOUT-GUITAR SECTION###### */
 
 section.about-guitar {
-	background-color: #f7f7f7;
 	color: #2b2a2a;
+	background: url('../img/about-guitar/about-bg.jpg') no-repeat;
+	background-size: cover;
 }
+
 
 .about-guitar .container {
 	max-width: 1200px;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	background: url("../img/about-guitar/about-bg.jpg") 100%/auto;
 	padding: 65px 30px 51px 30px;
 	box-sizing: border-box;
 }
 
 .about-guitar .content {
 	display: flex;
+	justify-content: space-between;
 	align-items: flex-start;
 	position: relative;
 }
@@ -541,7 +548,8 @@ ul.features .service {
 
 section.order {
 	background: url("../img/order/smoke.png") 100%/cover no-repeat;
-	background-color: #181818;           
+	background-color: #181818;     
+	position: relative;      
 }
 
 section.order .container {
@@ -571,11 +579,9 @@ section.order .container {
 }
 
 .order img {
-	position: relative;
-	top: -64px;
-	right: 32px;
-	float: right;
-
+	position: absolute;
+	top: 50px;
+	right: 0px;
 }
 
 .order form {
