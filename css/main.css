@@ -39,6 +39,7 @@ header {
 	height: 58px;
 	background: rgba(0, 0, 0, 0.4);
 	display: flex;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -55,12 +56,12 @@ header {
 
 .header-top .location {
 	font-size: 16px;
-	margin-left: 210px;
+
 }
 
 .header-top .tell-back {
 	display: block;
-	margin-left: 180px;
+
 	padding: 4px 0;
 	width: 160px;
 	border: 1px solid #0b86d4;
@@ -115,7 +116,7 @@ header {
 	width: 195px;
 	height: 90px;
 	position: relative;
-	margin-left: 310px;
+
 }
 
 .video-text {
@@ -451,7 +452,9 @@ span.blue {
 .guarantees ul.features {
 	margin: 116px 0 0 0;
 	padding: 0;
+	padding-right: 30px;
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
@@ -459,7 +462,7 @@ ul.features li {
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
-	margin-right: 55px;
+	margin-right: 20px;
 	margin-bottom: 98px;
 	padding-left: 109px;
 	width: 275px;
@@ -666,10 +669,8 @@ footer::before {
 
 footer .footer-content {
 	margin-top: 65px;
-	padding-left: 6px;
-	padding-right: 69px;
 	display: flex;
-	align-items: center;
+	justify-content: space-around;
 }
 
 footer a.logo {
@@ -688,15 +689,28 @@ footer .site-name {
 footer .location {
 	font-size: 16px;
 	margin: 0;
-	margin-left: 450px;
+
 }
 
 footer .number {
 	font-size: 16px;
-	margin-left: 130px;
+
 }
 
 footer .number:hover {
 	border-bottom: 2px solid #0b86d4;
 	border-top: 2px solid transparent;
+}
+
+@media (max-width: 1120px) {
+	.guarantees ul.features {
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	ul.features li,
+	ul.features li:nth-child(even) {
+		margin-bottom: 30px;
+		margin-right: 25px;
+	}
 }
