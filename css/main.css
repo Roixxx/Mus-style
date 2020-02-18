@@ -92,6 +92,7 @@ header {
 	margin: 0;
 	margin-top: 87px;
 	font-weight: 400;
+	position: relative;
 }
 
 .header-content h1::after {
@@ -116,7 +117,7 @@ header {
 	width: 195px;
 	height: 90px;
 	position: relative;
-
+	margin-bottom: 140px;
 }
 
 .video-text {
@@ -151,10 +152,12 @@ header {
 	background-color: rgba(16, 195, 233, 0.4);
 }
 
-.header-content img {
+.header-content__inner {
 	position: absolute;
 	right: 35%;
 	top: 8%;
+	display: flex;
+	align-items: flex-end;
 }
 
 .header-bottom {
@@ -591,6 +594,7 @@ section.order .container {
 	display: flex;
 	margin-top: 125px;
 	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 .order input,
@@ -606,6 +610,7 @@ section.order .container {
 	font-size: 20px;
 	font-family: "Jura Light", sans-serif;
 	box-sizing: border-box;
+	margin-bottom: 20px;
 }
 
 .order .phone-block,
@@ -653,9 +658,8 @@ footer {
 	max-width: 1140px;
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 99px;
+	margin-top: 70px;
 	padding-bottom: 30px;
-
 }
 
 footer::before {
