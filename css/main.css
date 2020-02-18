@@ -56,11 +56,11 @@ header {
 	display: block;
 	margin-left: 180px;
 	padding: 4px 0;
-	width: 110px;
+	width: 160px;
 	border: 1px solid #0b86d4;
 	border-radius: 25px;
 	text-align: center;
-	font-size: 10px;
+	font-size: 16px;
 	transition: 0.3s;
 }
 
@@ -71,6 +71,11 @@ header {
 .header-top .number {
 	font-size: 16px;
 	margin-left: 24px;
+}
+
+.header-top .number:hover {
+	border-bottom: 2px solid #0b86d4;
+	border-top: 2px solid transparent;
 }
 
 .header-content h1 {
@@ -278,7 +283,7 @@ section.about-guitar {
 
 .about-guitar .features-list p {
 	margin: 10px 0 0 55px;
-	font-size: 14px;
+	font-size: 20px;
 	line-height: 23px;
 	font-family: 'Jura Light', sans-serif;
 }
@@ -298,7 +303,7 @@ section.about-guitar {
 .about-guitar .buy-button {
 	display: block;
 	position: absolute;
-	bottom: 73px;
+	bottom: 0px;
 	padding: 15px 0;
 	width: 250px;
 	font-size: 30px;
@@ -632,7 +637,7 @@ footer {
 	width: 1140px;
 	margin: 0 auto;
 	margin-top: 99px;
-	padding-bottom: 69px;
+	padding-bottom: 30px;
 
 }
 
@@ -676,4 +681,9 @@ footer .location {
 footer .number {
 	font-size: 16px;
 	margin-left: 130px;
+}
+
+footer .number:hover {
+	border-bottom: 2px solid #0b86d4;
+	border-top: 2px solid transparent;
 }
