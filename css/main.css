@@ -44,6 +44,15 @@ header {
 	align-items: center;
 }
 
+.header-top--fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.9);
+}
+
 .header-top h2 {
 	padding-left: 40px;
 	font-size: 20px;
@@ -846,6 +855,23 @@ footer .number:hover {
 
 	.order form {
 		margin-top: 20px;
+	}
+	
+	footer .footer-content {
+		margin-top: 33px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 100%;
+	}
+
+	footer .location {
+		margin: 15px 0;
+	}
+
+	footer a.logo {
+		transform: translateX(-10px);
 	}
 }
 

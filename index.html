@@ -9,9 +9,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap&subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
-		<header>
+		<header id="header">
 			<div class="header-container container">
-				<div class="header-top">
+				<div class="header-top" id="header-top">
 					<a class="logo" href="#">
 						<h2 class="site-name">Mus-style</h2>
 					</a>
@@ -143,25 +143,7 @@
 		</section>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="jquery.maskedinput.js"></script>
-		<script>
-			$(function(){ $("#telephone").mask("+7(999)-999-99-99"); });
-
-			$('input[type="tel"]').click(function(){
-				$(this).setCursorPosition(3); 
-			});
-
-			$.fn.setCursorPosition = function(pos) {
-				if ($(this).get(0).setSelectionRange) {
-					$(this).get(0).setSelectionRange(pos, pos);
-				} else if ($(this).get(0).createTextRange) {
-					var range = $(this).get(0).createTextRange();
-					range.collapse(true);
-					range.moveEnd('character', pos);
-					range.moveStart('character', pos);
-					range.select();
-				}
-			};
-		</script>
+		<script src="js/jquery.maskedinput.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
