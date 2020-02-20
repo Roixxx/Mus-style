@@ -53,6 +53,75 @@ header {
 	background: rgba(0, 0, 0, 0.9);
 }
 
+/******* MENU TOGGLE *******/
+
+.menu-toggle {
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	z-index: 1;
+	width: 30px;
+	padding: 10px 0;
+	font-size: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+
+.menu-toggle__item {
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	transition: background 0.3s linear;
+}
+
+.menu-toggle__item::before,
+.menu-toggle__item::after {
+	content: "";
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	background-color: #fff;
+	left: 0;
+	z-index: 1;
+	transition: transform 0.3s linear;
+}
+
+.menu-toggle__item::before {
+	top: -8px;
+}
+
+.menu-toggle__item::after {
+	bottom: -8px;
+}
+
+/******* MENU TOGGLE / CONDITION: ACTIVE *******/
+
+.menu-toggle.active 
+.menu-toggle__item {
+	background: none;
+}
+
+.menu-toggle.active 
+.menu-toggle__item::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.menu-toggle.active 
+.menu-toggle__item::after {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
+
 .header-top h2 {
 	padding-left: 40px;
 	font-size: 20px;
@@ -71,7 +140,6 @@ header {
 
 .header-top .tell-back {
 	display: block;
-
 	padding: 4px 0;
 	width: 160px;
 	border: 1px solid #0b86d4;
@@ -772,6 +840,19 @@ footer .number:hover {
 		right: 10px;
 	}
 
+	.header-top .location,
+	.header-top .tell-back,
+	.header-top .number {
+		display: none;
+	}
+
+	.menu-toggle {
+		display: block;
+		position: fixed;
+		z-index: 1999;
+	}
+
+
 	.about-guitar .features-list p {
 		margin-left: 5px;
 	}
@@ -792,6 +873,7 @@ footer .number:hover {
 	.guarantees ul.features {
 		padding-right: 0;
 	}
+
 
 }
 
