@@ -48,6 +48,7 @@ $(function() {
         event.preventDefault();
 
         $(this).toggleClass("active");
-        $("#menu__list").toggleClass("active");
+        $("#header-top").toggleClass("header-top--active");
+        $("#header-top__info").toggleClass("header-top__info--active");
     });
 });

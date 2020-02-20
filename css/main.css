@@ -44,6 +44,25 @@ header {
 	align-items: center;
 }
 
+.header-top--active {
+	height: 174px;
+}
+
+.header-top__info {
+	width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header .header-top__info--active {
+	flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+
+
 .header-top--fixed {
 	position: fixed;
 	top: 0;
@@ -51,6 +70,10 @@ header {
 	width: 100%;
 	z-index: 100;
 	background: rgba(0, 0, 0, 0.9);
+}
+
+.header-top--fixed .menu-toggle {
+	position: fixed;
 }
 
 /******* MENU TOGGLE *******/
@@ -840,18 +863,14 @@ footer .number:hover {
 		right: 10px;
 	}
 
-	.header-top .location,
-	.header-top .tell-back,
-	.header-top .number {
+	.header-top__info {
 		display: none;
 	}
 
 	.menu-toggle {
 		display: block;
-		position: fixed;
 		z-index: 1999;
 	}
-
 
 	.about-guitar .features-list p {
 		margin-left: 5px;
