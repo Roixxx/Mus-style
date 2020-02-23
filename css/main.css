@@ -14,6 +14,10 @@ a {
 	text-decoration: none;
 }
 
+p {
+	margin: 0;
+}
+
 .container {
 	padding: 0 15px;
 	box-sizing: border-box;
@@ -46,6 +50,13 @@ header {
 
 .header-top--active {
 	height: 174px;
+	flex-direction: column;
+	padding-bottom: 10px;
+	box-shadow: 2px 14px 45px 5px rgba(0,0,0,0.73)
+}
+
+.header-top--active .logo{
+	height: 89px !important;
 }
 
 .header-top__info {
@@ -57,7 +68,6 @@ header {
 
 #header .header-top__info--active {
 	flex-direction: column;
-    justify-content: center;
     display: flex;
     height: 100%;
 }
@@ -70,6 +80,7 @@ header {
 	width: 100%;
 	z-index: 100;
 	background: rgba(0, 0, 0, 0.9);
+	border-radius: 0px 0px 20px 20px;
 }
 
 .header-top--fixed .menu-toggle {
@@ -145,15 +156,18 @@ header {
 	transform: rotate(-45deg);
 }
 
-.header-top h2 {
-	padding-left: 40px;
-	font-size: 20px;
-	font-weight: 700;
-}
+.header-top .site-name {
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    min-width: 150px;
+    background: url(../img/header/sprites.png) no-repeat left center;
 
-.header-top a.logo {
-	background: url("../img/header/sprites.png") no-repeat left center;
-	background-position: 0px -41px;
+	background-position: 3px -39px;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .header-top .location {
@@ -178,12 +192,12 @@ header {
 
 .header-top .number {
 	font-size: 16px;
-	margin-left: 24px;
+	border: 2px solid transparent;
 }
 
 .header-top .number:hover {
 	border-bottom: 2px solid #0b86d4;
-	border-top: 2px solid transparent;
+
 }
 
 .header-content h1 {
@@ -772,7 +786,10 @@ footer .footer-content {
 	margin-top: 65px;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
+
+
 
 footer a.logo {
 	padding-left: 44px;
@@ -795,7 +812,6 @@ footer .location {
 
 footer .number {
 	font-size: 16px;
-
 }
 
 footer .number:hover {
