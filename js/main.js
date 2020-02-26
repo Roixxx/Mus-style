@@ -23,20 +23,26 @@ $.fn.setCursorPosition = function(pos) {
 $(function() {
     let header = $("#header-top");
     let intorH = $("#header").innerHeight();
-    let scrollOffset = $(window).scrollTop();
+    let scrollOffset = window.pageYOffset;
+    let spacer = $("#spacer");
+
+
+    console.log(spacer);
 
     checkScroll(scrollOffset);
 
     $(window).on("scroll", function() {
-        scrollOffset = $(this).scrollTop();
+        scrollOffset = window.pageYOffset;
         checkScroll(scrollOffset);
     });
 
     function checkScroll(scrollOffset) {
         if (scrollOffset >= intorH) {
             header.addClass("header-top--fixed");
+            spacer.css("height", "58px");
         } else {
             header.removeClass("header-top--fixed");
+            spacer.css("height", "0")
         }
     }
 });

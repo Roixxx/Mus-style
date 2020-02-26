@@ -46,6 +46,7 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	transition: top 1s;
 }
 
 .header-top--active {
@@ -72,7 +73,6 @@ header {
     height: 100%;
 }
 
-
 .header-top--fixed {
 	position: fixed;
 	top: 0;
@@ -85,6 +85,10 @@ header {
 
 .header-top--fixed .menu-toggle {
 	position: fixed;
+}
+
+.spacer {
+	height: 0;
 }
 
 /******* MENU TOGGLE *******/
