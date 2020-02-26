@@ -726,6 +726,7 @@ section.order .container {
 	font-family: "Jura Light", sans-serif;
 	box-sizing: border-box;
 	margin-bottom: 20px;
+	outline: none;
 }
 
 .order .phone-block,
@@ -1036,6 +1037,10 @@ footer .number:hover {
 
 	.about-guitar .price::before {
 		width: 50px;
+	}
+
+	.guarantees .container {
+		padding: 0px;
 	}
 
 	ul.guitar-specifications .circle {
